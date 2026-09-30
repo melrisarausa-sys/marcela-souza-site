@@ -627,10 +627,10 @@ a.pill:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .final-grid h2{font-size:clamp(34px,3.9vw,56px);max-width:16ch}
 .final-grid .final-3c{font-size:clamp(22px,2.2vw,32px);flex-wrap:nowrap;gap:6px 22px}
 .final-grid > div:last-child{align-self:center;padding-bottom:clamp(64px,7vw,110px)}
-.final-photo{margin:0;aspect-ratio:auto;background:none;width:100%;max-width:620px;justify-self:center}
+.final-photo{margin:0;aspect-ratio:auto;background:none;width:100%;max-width:530px;justify-self:center}
 .final-photo::after{content:none}
 .final::before{content:none}
-.final-photo img{display:block;width:100%;height:auto;object-fit:contain;-webkit-mask-image:none;mask-image:none}
+.final-photo img{display:block;width:100%;height:auto;object-fit:contain;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 7%,#000 82%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 7%,#000 82%,transparent 100%);mask-composite:intersect}
 .final-grid p{margin-top:24px}
 .final-grid .final-3c{margin-top:32px}
 .final-ctas{display:inline-grid;grid-template-columns:1fr;gap:14px;margin-top:40px}
@@ -642,8 +642,7 @@ a.pill:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
   .final .final-grid > div:last-child{display:contents}
   .final .final-grid h2{order:1;text-align:center;margin-inline:auto;max-width:27ch;font-size:clamp(21px,6.2vw,42px);justify-self:center}
   .final .final-photo{order:2;width:100%;max-width:460px;margin:22px auto 0;justify-self:center;align-self:start;position:relative;min-height:0}
-  .final .final-photo img{position:static;width:100%;height:auto;max-width:100%;
-    -webkit-mask-image:linear-gradient(to bottom,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 80%,transparent 100%)}
+  .final .final-photo img{position:static;width:100%;height:auto;max-width:100%}
   .final .final-grid p{order:3;margin:6px auto 0;max-width:none;text-align:center;justify-self:center}
   .final .final-grid .final-3c{order:4;margin-top:28px;flex-direction:row;flex-wrap:nowrap;justify-content:center;gap:0 clamp(10px,3vw,22px);font-size:clamp(19px,5.4vw,30px);white-space:nowrap}
   .final .final-ctas{order:5;display:grid;margin-top:32px;justify-self:center;width:min(100%, 400px)}
@@ -1090,9 +1089,10 @@ a.btn.cta:hover{animation-play-state:paused}
         <div class="consult-intro">
           <span class="badge rv">Serviço principal · Individual</span>
           <h2 id="consult-title" class="rv"><span>Consultoria</span>Despertar</h2>
-          <p class="consult-def rv">Uma imersão estratégica de duas sessões para desbloquear sua presença digital com clareza, método e escuta.</p>
-          <p class="lead rv">Aplicação personalizada do <b>Método 3C (Clareza, Coerência, Conexão)</b>, conduzida por uma psicóloga que entende que marca pessoal exige saúde mental para ser sustentável.</p>
-          <p class="not-therapy rv">Um trabalho de Marca Pessoal, posicionamento e comunicação. O olhar psicológico está na leitura de identidade e dos bloqueios que interferem na exposição. Não é psicoterapia.</p>
+          <p class="consult-def rv">Uma imersão estratégica em duas sessões para construir uma presença digital mais clara, coerente e sustentável.</p>
+          <p class="lead rv">A partir do <b>Método 3C (Clareza, Coerência e Conexão)</b>, conduzo um processo personalizado de Marca Pessoal, posicionamento e comunicação, com escuta, método e olhar psicológico.</p>
+          <p class="lead rv">O foco está na leitura da identidade e dos bloqueios que podem interferir na forma como você se mostra no digital.</p>
+          <p class="not-therapy rv">Não se trata de psicoterapia.</p>
         </div>
       </div>
 
@@ -1383,7 +1383,7 @@ a.btn.cta:hover{animation-play-state:paused}
 <section class="final on-dark" id="contato" aria-labelledby="final-title">
   <div class="wrap final-grid">
     <figure class="final-photo rv">
-      <picture><source type="image/webp" srcset="img/marcela-final-sem-fundo-480.webp 480w, img/marcela-final-sem-fundo-800.webp 800w, img/marcela-final-sem-fundo-1055.webp 1055w" sizes="(max-width:920px) min(100vw, 460px), 600px"><img src="img/marcela-final-sem-fundo.png" alt="Retrato de Marcela Souza de blazer preto, com a mão próxima ao rosto" width="1055" height="1491" loading="lazy" decoding="async"></picture>
+      <picture><source type="image/avif" srcset="img/marcela-final-2-480.avif 480w, img/marcela-final-2-640.avif 640w, img/marcela-final-2-800.avif 800w, img/marcela-final-2-1024.avif 1024w" sizes="(max-width:920px) min(100vw, 460px), 540px"><source type="image/webp" srcset="img/marcela-final-2-480.webp 480w, img/marcela-final-2-640.webp 640w, img/marcela-final-2-800.webp 800w, img/marcela-final-2-1024.webp 1024w" sizes="(max-width:920px) min(100vw, 460px), 540px"><img src="img/marcela-final-2.jpg" alt="Retrato de Marcela Souza sorrindo, de terninho claro, com a mão apoiada no rosto" width="800" height="1200" loading="lazy" decoding="async"></picture>
     </figure>
     <div>
     <h2 id="final-title" class="rv">Você não precisa criar <em>um personagem</em> para construir uma presença profissional forte.</h2>
