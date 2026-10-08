@@ -563,6 +563,11 @@ a.pill:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 .footer .fi .dot{fill:var(--gold);stroke:none}
 .footer .fi .fill{fill:var(--gold);stroke:none}
 .footer-bottom{margin-top:52px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:var(--muted)}
+.footer-legal{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px}
+.footer .footer-legal a{color:var(--muted)}
+.footer-legal span{color:var(--line)}
+@media (max-width:1100px){ .footer-legal{order:-1;flex-basis:100%} }
+@media (max-width:560px){ .footer-legal{gap:6px 18px} .footer-legal span{display:none} }
 
 /* ===== Fotos extras ===== */
 .master-photo{aspect-ratio:1/1;margin:calc(-1 * clamp(28px,3.4vw,44px)) calc(-1 * clamp(28px,3.4vw,44px)) 30px;background:#2e1f11}
@@ -1426,6 +1431,7 @@ a.btn.cta:hover{animation-play-state:paused}
     </div>
     <div class="footer-bottom">
       <span>© <span id="ano">2026</span> Marcela Souza. Todos os direitos reservados.</span>
+      <nav class="footer-legal" aria-label="Informações legais"><a href="privacy-policy.html">Política de Privacidade</a><span aria-hidden="true">|</span><a href="terms-of-use.html">Termos de Uso</a><span aria-hidden="true">|</span><a href="cookies-policy.html">Política de Cookies</a></nav>
       <span>Desenvolvido por Melri Siragusa Design</span>
     </div>
   </div>
@@ -1553,3 +1559,4 @@ a.btn.cta:hover{animation-play-state:paused}
   setTimeout(function(){ if(!ioAlive) items.forEach(function(el){ el.classList.add('in'); }); }, 3000);
 })();
 </script>
+<script src="consent.js" defer></script>
